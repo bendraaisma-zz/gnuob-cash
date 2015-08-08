@@ -1,0 +1,10 @@
+language: java
+jdk: oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: EFspzBp1DDSnLwCS0dMreUC5EARIbfSHpQJawX0CJd3L/KsHblyVJKW+2rGdlSh5YHeFJurZvmD2yzjnTQlWSn/GYK0J+/f8Mydgtiok9v5rq+6oVvies9HoeNvBYgi8jGxlhvRI3QEr11+rF1r6JpguPvtm/sPKIkUjbBR1R/bkchaQiQa+fCVc0QSgvM8FPdcyOWnZK0iFIRbY7gOmDn6kBLB4hmV4G7FWwEoJAxNlBL8vI/BOKWp2Bq/zMkiIjPlWKmqzIxj2J9QoUtIm1rpK9jN+Vl3h70W/Fp5urKW8C+YpBu+VXG0dSUb+cyV45FYeTCrcZc5SuT93kyH80Bc9DyCh1BTppbIgwezLHdlqeJ3tD9X8GkTNrTZZA5h0OnTbZrwwKFposCNek9QPkUpkLvV7SCoHOSRUENXNzar3egimqRMQYuiGaRZJ5CILO5uq1ublQjPrHXKquxYw8GduB2TCsLs7QJ90+pxOuALQiQGz7LIPpWl9p4OrBIR1yHbtOBVlJp9VGo0NmEjXv0nyIUkEpNOv6n8oTDE1PynSNTur+5gAzirVcS/3vWxhafcsQ/d7AdTzOb6Nb3aVI8n+sdpim/Ud+eXeKaD3nXdpVmEeWM9dtRGOFyugHD7F7GKTJqIZ9WaHyMlDJQ1zBZCUsYKuVf5nuLUvuc/rwr8=
+  file: target/gnuob-cash.war
+  skip_cleanup: true
+  on:
+    tags: true
